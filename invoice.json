@@ -1,0 +1,23 @@
+{
+    "title": "Invoice",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type":"object",
+    "properties": {
+        "id": {
+            "type": "string",
+            "description": "The identifier for this invoice."
+        },
+        "type": {
+            "type": "string",
+            "description": "The type of invoice.",
+            "enum": [
+                "sales",
+                "correction"
+            ]
+        },
+        "total_amount": {
+            "type": "number",
+            "description": "The total amount for this invoice."
+        }
+    }
+}
