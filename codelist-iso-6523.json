@@ -1,0 +1,10 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$id": "groendus:codelist:iso-6523",
+    "type": "string",
+    "enum": [
+        "0106",
+        "0189",
+        "0190"
+    ]
+}

@@ -8,10 +8,7 @@
             "description": "The identifier for this legal entity, valid for the designator. Example: A Dutch (NL) KVK number."
         },
         "designator": {
-            "type": "string",
-            "minLength": 1,
-            "maxLength": 4,
-            "description": "ISO 6523 International Code Designator for the identifier."
+            "$ref": "codelist-iso-6523.json"
         }
     },
     "required": [
