@@ -1,0 +1,31 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$id": "groendus:energy-data-mandate",
+    "title": "Energy data mandate",
+    "description": "Data contract giving one legal entity a mandate to retrieve energy data on behalf of another legal entity.",
+    "properties": {
+        "issuedBy":{
+            "$ref": "legalentity.json",
+            "description": "The legal entity issuing the mandate."
+        },
+        "issuedTo": {
+            "$ref": "legalentity.json",
+            "description": "The legal entity receiving the mandate."
+        },
+        "issuedOn":{
+            "type": "string",
+            "format": "date",
+            "description": "The date the mandate was issued on. It will be valid from this date onwards."
+        },
+        "expiresOn": {
+            "type": "string",
+            "format": "date",
+            "description": "The date the mandate expires."
+        }
+    },
+    "required": [
+        "issuedBy",
+        "issuedTo",
+        "issuedOn"
+    ]
+}

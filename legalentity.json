@@ -1,0 +1,20 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$id": "groendus:legal-entity",
+    "title": "Legal entity",
+    "properties": {
+        "identifier":{
+            "type": "string"
+        },
+        "designator": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4,
+            "description": "ISO 6523 International Code Designator for the identifier."
+        }
+    },
+    "required": [
+        "identifier",
+        "designator"
+    ]
+}
