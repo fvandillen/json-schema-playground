@@ -4,7 +4,8 @@
     "title": "Legal entity",
     "properties": {
         "identifier":{
-            "type": "string"
+            "type": "string",
+            "description": "The identifier for this legal entity, valid for the designator. Example: A Dutch (NL) KVK number."
         },
         "designator": {
             "type": "string",
